@@ -1,0 +1,60 @@
+.principal{
+    margin: auto;
+    height: 20em;
+    width: 40em;
+}
+.colum1{
+    margin: 0em;
+    padding: 0em;
+    height: 10em;
+    width: 15em;
+    float: left;
+}
+.boton {
+    text-decoration: underline;
+    color: blue;
+    margin: 0em;
+    margin-right: 0.2em;
+    float: left;
+    font-size: 1.5em;
+}
+.colum2{
+    margin: 0em;
+    height: 10em;
+    width: 25em;
+    float: left;
+}
+.t{
+    margin-top: 0.5em;
+    margin-bottom: 0.01em;
+    width: 10em;
+}
+.t1{
+    margin-top: 0.5em;
+    margin-bottom: 0.01em;
+    width: 5em;
+}
+.t2{
+    margin-top: 0.5em;
+    margin-bottom: 0.01em;
+    width: 2em;
+}
+.p2 {
+    text-align: center;
+    font-size: 1.1em;
+    margin: 0.4em;
+    font-weight: bold;
+}
+.caja{
+    border: 0.3em solid;
+    width: 40em;
+    background-color: yellow;
+    margin: auto;
+    height: 10em;
+    margin-top: 0.8em;
+}
+.p1{
+    background-color: orange;
+    color: blue;
+    font-size: 2em;
+}

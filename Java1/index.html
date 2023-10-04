@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Document</title>
+<script>
+    
+    var texto = document.getElementById("texto")
+    function CambiarTexto()
+    {
+        var valor = prompt("Dame el valor")
+        document.getElementById("texto").innerHTML=valor
+    }
+    function CambiarColor()
+    {
+        var x = document.getElementById("divv")
+        x.style.backgroundColor = "yellow"
+    }
+    function Cambiarfc()
+    {
+        var x = document.getElementById("texto")
+        x.style.fontFamily = "Arial"
+        x.style.color = "blue"
+    }
+
+</script>
+</head>
+<body>
+    <div class="caja" id="divv">
+        <p id="texto">Es un texto por defecto</p>
+    </div>
+    <input type="button" value="Cambiar texto" id="colort" onclick="CambiarTexto()"><br>
+    <input type="button" value="Cambiar color de fondo" id="tipotexto" onclick="CambiarColor()"><br>
+    <input type="button" value="Cambiar tipo y color de letra" id="tipotexto" onclick="Cambiarfc()">
+</body>
+</html>

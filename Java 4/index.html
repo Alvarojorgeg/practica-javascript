@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Document</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Document</title>
+    <script>
+        function rellenos() {
+            var nombre = document.getElementById("nombre").value;
+            var apellido1 = document.getElementById("apellido1").value;
+            var apellido2 = document.getElementById("apellido2").value;
+            var correo = document.getElementById("correo").value;
+            var n1 = document.getElementById("n1").value;
+            var n2 = document.getElementById("n2").value;
+
+            if (nombre.length === 0 || apellido1.length === 0 || apellido2.length === 0 || correo.length === 0) {
+                alert("Rellena todos los campos");
+                return
+            } 
+            if (document.getElementById("correo").value.includes("@")) {
+            } else {
+                alert("No contiene el @");
+                return
+            }
+            if (n1.length === 7){
+            } else{
+                alert("Debe de tener el primer numero de la SS 7 digitos")
+            }
+            if (n2.length === 1 | n2.length === 2){
+            } else{
+                alert("Debe de tener el segundo numero de la SS debe tener 1 o 2 digitos")
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="form">
+        <div class="principal">
+            <span class="p1">Solicitud del informe de la Vida Laboral</span>
+            <div class="caja">
+                <div class="colum1">
+                    <p class="p2">Nombre:</p>
+                    <p class="p2">Primer apellido:</p>
+                    <p class="p2">Segundo apellido:</p>
+                    <p class="p2">Correo electronico:</p>
+                    <p class="p2">Numero de afiliado de la S.S.:</p>
+                </div>
+                <div class="colum2">
+                    <input class="t" type="text" id="nombre" value=""><br>
+                    <input class="t" type="text" id="apellido1" value=""><br>
+                    <input class="t" type="text" id="apellido2" value=""><br>
+                    <input class="t" type="text" id="correo" value=""><br>
+                    <select class="t">
+                        <option value="1">MADRID</option>
+                        <option value="2">TOLEDO</option>
+                        <option value="3">SEVILLA</option>
+                        <option value="4">GALICIA</option>
+                        <option value="5">VALENCIA</option>
+                    </select>
+                    /
+                    <input class="t1" type="number" id="n1" value=""> /
+                    <input class="t2" type="number" id="n2" value=""><br>
+                </div>
+            </div>
+            <a href="" class="boton" onclick="rellenos()">Enviar</a><a href="" class="boton"onclick="rellenos()">Borrar</a>
+        </div>
+    </form>
+</body>
+</html>

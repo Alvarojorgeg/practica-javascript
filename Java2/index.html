@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Document</title>
+<script>
+    function calcular(){
+        var precio = 12000;
+        if (document.getElementById("2").checked) {
+            precio += 1500;
+        }
+        if (document.getElementById("3").checked){
+            precio += 3000;
+        }
+        if (document.getElementById("1").checked && document.getElementById("4").checked) {
+            precio -= 2000;
+        } else if (document.getElementById("1").checked && !document.getElementById("4").checked) {
+            alert("Solo se puede seleccionar Gasolina y el modelo de las 3 puertas");
+            return;
+        }
+        if (document.getElementById("6").checked){
+            precio += 1500;
+        }
+        if (document.getElementById("10").checked){
+            precio -= 500;
+        }
+        if (document.getElementById("11").checked){
+            precio -= 600;
+        }
+        if ((document.getElementById("7").checked || document.getElementById("8").checked || document.getElementById("9").checked) && document.getElementById("12").checked) {
+            precio += 750;
+        } else if (document.getElementById("12").checked) {
+            alert("Solo se puede seleccionar pintura metalizada si escoges el color rojo, verde o naranja");
+            return;
+        }
+        if (document.getElementById("13").checked){
+            precio += 200;
+        }
+        if (document.getElementById("14").checked){
+            precio += 800;
+        }
+        if (document.getElementById("15").checked){
+            precio += 340;
+        }
+        if (document.getElementById("16").checked && document.getElementById("6").checked){
+            precio += 800;
+        } else if (document.getElementById("16").checked && !document.getElementById("6").checked) {
+            alert("Solo se puede seleccionar DVD en el modelo Familiar");
+            return;
+        }
+        alert("Precio total: " + precio + "€");
+    }
+</script>
+</head>
+<body>
+    <div class="caja1">
+        <p id="texto">Configuracion del coche</p>
+    </div>
+    <div class="caja2">
+        <p id="texto">Tipo de Motor</p>
+        <input type="radio" name="1"id="1">Gasolina
+        <input type="radio" name="1"id="2">Diesel(+1500€)
+        <input type="radio" name="1" id="3">Hibrido(+3000€)
+    </div>
+    <div class="caja3">
+        <p id="texto">Tipo de Puertas</p>
+        <input type="radio" name="2" id="4">3 Puertas (-2000€)(Solo gasolina)
+        <input type="radio" name="2" id="5">5 Puertas
+        <input type="radio" name="2" id="6">Familiar(+1500€)
+    </div>
+    <div class="caja4">
+        <p id="texto">Tipo de Pintura</p>
+        <input type="radio" name="3" id="7">Rojo
+        <input type="radio" name="3" id="8">Verde
+        <input type="radio" name="3" id="9">Naranja
+        <input type="radio" name="3" id="10">Blanco(-500€)
+        <input type="radio" name="3" id="11">Negro(-600€)
+    </div>
+    <div class="caja5">
+        <p id="texto">Seleccionar las que se deseen</p>
+        <input type="checkbox" id="12">Metalizada(+750€)(Solo Rojo, Verde o Naranja)<br>
+        <input type="checkbox" id="13">Llantas(+200€)<br>
+        <input type="checkbox" id="14">Climatizador(+800€)<br>
+        <input type="checkbox" id="15">GPS(+340€)<br>
+        <input type="checkbox" id="16">DVD(+800€)(Solo modelo Familiar)
+    </div>
+    <div class="caja6">
+        <p id="texto">Total a cobrar</p>
+        <input type="button" id="boton" value="Calcular" onclick="calcular()">
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+.caja1{
+    width: 35em;
+    margin: auto;
+    padding: 0.4em;
+    padding-left: 1em;
+    height: 2em;
+    border: 0.1em solid;
+}
+.caja2{
+    width: 35em;
+    margin: auto;
+    padding: 0.4em;
+    padding-left: 1em;
+    height: 2.5em;
+    border: 0.1em solid;
+}
+.caja3{
+    width: 35em;
+    margin: auto;
+    padding: 0.4em;
+    padding-left: 1em;
+    height: 2.5em;
+    border: 0.1em solid;
+}
+.caja4{
+    width: 35em;
+    margin: auto;
+    padding: 0.4em;
+    padding-left: 1em;
+    height: 2.5em;
+    border: 0.1em solid;
+}
+.caja5{
+    width: 35em;
+    margin: auto;
+    padding: 0.4em;
+    padding-left: 1em;
+    height: 8em;
+    border: 0.1em solid;
+}
+.caja6{
+    width: 35em;
+    margin: auto;
+    padding: 0.4em;
+    padding-left: 1em;
+    height: 2.5em;
+    border: 0.1em solid;
+}
+p {
+    margin: 0em;
+    padding: 0em;
+}

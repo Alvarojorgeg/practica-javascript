@@ -1,0 +1,17 @@
+.caja{
+    height: 10em;
+    background-color: rgb(241, 241, 241);
+    margin: 1em;
+}
+p{
+    margin: 0em;
+    font-family: 'Times New Roman', Times, serif;
+}
+.boton{
+    margin: auto;
+    display: block;
+    margin-top: 2.3em;
+    text-align: center;
+    background-color: black;
+    color: white;
+}

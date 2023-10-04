@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Document</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Document</title>
+    <script>
+        function calc(){
+            var resultado = 0;
+    
+            if (document.getElementById("p1").checked) {
+                resultado += 1;
+            }
+    
+            if (document.getElementById("p8").checked) {
+                resultado += 1;
+            }
+            if (document.getElementById("p11").checked) {
+                resultado += 1;
+            }  
+            alert("EXAMEN FINALIZADO, HAS RESPONDIDO " + resultado + " BIEN");
+        }
+    </script>
+</head>
+<body>
+    <div class="caja">
+        <p>¿Cuál es el carnet que puedes llevar una moto de 125cc?</p><br>
+        <p>Seleccione una:</p>
+        <input type="radio" id="p1" name="carnet">A<br>
+        <input type="radio" id="p2" name="carnet">A1<br>
+        <input type="radio" id="p3" name="carnet">A2<br>
+        <input type="radio" id="p4" name="carnet">AM
+    </div>
+    <div class="caja">
+        <p>¿Cual es la mejor moto debido a sus caracteristicas y que supera la velocidad de los 400km/h con un turbo llamado SuperCharger en su configuracion SE?</p><br>
+        <p>Seleccione una:</p>
+        <input type="radio" id="p5" name="moto">Yamaha R1M<br>
+        <input type="radio" id="p6" name="moto">KTM DUKE 1291<br>
+        <input type="radio" id="p7" name="moto">HONDA CBR1000RR<br>
+        <input type="radio" id="p8" name="moto">Kawasaki H2R
+    </div>
+    <div class="caja">
+        <p>Cuanto mas grandes sean las ruedas, ¿mas podras tumbar?</p><br>
+        <p>Seleccione una:</p>
+        <input type="radio" id="p9" name="moto2">No porque eso no depende del tamaño, depende de la altura<br>
+        <input type="radio" id="p10" name="moto2">Si, al ser mas grandes tienes mas rango de inclinacion<br>
+        <input type="radio" id="p11" name="moto2">No, lo que te hara es ir mas estable<br>
+        <input type="radio" id="p12" name="moto2">Nose de motos
+    </div>
+    <input type="button" class="boton" value="Siguiente" onclick="calc()">
+</body>
+</html>
